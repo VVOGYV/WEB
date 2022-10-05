@@ -40,12 +40,6 @@ body {
     font-family: 'Pretendard Variable';
 }
 
-#loginText {
-    color: #6F6F6F;
-    font-size: 30px;
-    margin: 0px 0px 60px 0px;
-}
-
 input {
     display: block;
     background-color: #F5F5F5;
@@ -54,6 +48,13 @@ input {
     font-size: 18px;
     padding: 16px 20px;
     font-family: 'Pretendard Variable';
+}
+
+
+#loginText {
+    color: #6F6F6F;
+    font-size: 30px;
+    margin: 0px 0px 60px 0px;
 }
 
 #loginBtn {
