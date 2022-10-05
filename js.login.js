@@ -8,12 +8,12 @@ function checkUserId(event) {
     const userPassword = event.target[1].value;
 
     if (!emailCheck(userId)) {
-        alert('올바른 이메일 형식을 입력해주세요');
+        alert('올바른 이메일 형식을 입력해주세요.');
         return;
     }
 
     if (!passwordCheck(userPassword)) {
-        alert('비밀번호는 8자이상 입력해주세요');
+        alert('비밀번호는 8자 이상 입력해주세요.');
         return;
     }
     loginSuccess(userId)
@@ -33,7 +33,7 @@ function passwordCheck(password) {
 
 function loginSuccess(userId) {
     form.classList.add('hidden')
-    const loginSuccess = document.createElement('h2');
     container.appendChild(loginSuccess);
-    loginSuccess.innerText = `${userId}님로그인에 성공하셨습니다!`
+    const loginSuccess = document.createElement('h2');
+    loginSuccess.innerText = `${userId}님 로그인 성공하셨습니다!`
 }
